@@ -70,6 +70,13 @@ public:
     double getAccel() { return m_acceleration; }
     double getTraction() { return m_traction; }
     std::string getColour() { return m_colour; }
+
+    bool getCarbonFibre() { return m_carbonFibre; }
+    bool getTyres() { return m_performanceTyres; }
+    bool getSpoiler() { return m_spoiler; }
+    bool getRacingStripes() { return m_racingStripes; }
+    bool getEngine() { return m_upgradedEngine; }
+
     
     //forward declarations for functions defined in Car.cpp
     void printCar();

@@ -45,14 +45,22 @@ void racingStripes(int uniqueID)
 
         convertLower(stripeChoice);
 
-        if (stripeChoice == "y" || stripeChoice == "yes")
+        if ((stripeChoice == "y" || stripeChoice == "yes") && getCar(uniqueID).getRacingStripes() == 0)
         {
             getCar(uniqueID).addRacingStripes();
             break;
         }
-        else if (stripeChoice == "n" || stripeChoice == "no")
+        else if ((stripeChoice == "y" || stripeChoice == "yes") && getCar(uniqueID).getRacingStripes() == 1)
+        {
+            break;
+        }
+        else if ((stripeChoice == "n" || stripeChoice == "no") && getCar(uniqueID).getRacingStripes() == 1)
         {
             getCar(uniqueID).removeRacingStripes();
+            break;
+        }
+        else if ((stripeChoice == "n" || stripeChoice == "no") && getCar(uniqueID).getRacingStripes() == 0)
+        {
             break;
         }
         else
@@ -100,14 +108,22 @@ void tyreMenu(int uniqueID)
 
         convertLower(tyreChoice);
 
-        if (tyreChoice == "y" || tyreChoice == "yes")
+        if ((tyreChoice == "y" || tyreChoice == "yes") && getCar(uniqueID).getTyres() == 0)
         {
             getCar(uniqueID).upgradeTyres();
             break;
         }
-        else if (tyreChoice == "n" || tyreChoice == "no")
+        else if ((tyreChoice == "y" || tyreChoice == "yes") && getCar(uniqueID).getTyres() == 1)
+        {
+            break;
+        }
+        else if ((tyreChoice == "n" || tyreChoice == "no") && getCar(uniqueID).getTyres() == 1)
         {
             getCar(uniqueID).downgradeTyres();
+            break;
+        }
+        else if ((tyreChoice == "n" || tyreChoice == "no") && getCar(uniqueID).getTyres() == 0)
+        {
             break;
         }
         else
@@ -132,14 +148,22 @@ void engineMenu(int uniqueID)
 
         convertLower(engineChoice);
 
-        if (engineChoice == "y" || engineChoice == "yes")
+        if ((engineChoice == "y" || engineChoice == "yes") && getCar(uniqueID).getEngine() == 0)
         {
             getCar(uniqueID).upgradeEngine();
             break;
         }
-        else if (engineChoice == "n" || engineChoice == "no")
+        else if ((engineChoice == "y" || engineChoice == "yes") && getCar(uniqueID).getEngine() == 1)
+        {
+            break;
+        }
+        else if ((engineChoice == "n" || engineChoice == "no") && getCar(uniqueID).getEngine() == 1)
         {
             getCar(uniqueID).downgradeEngine();
+            break;
+        }
+        else if ((engineChoice == "n" || engineChoice == "no") && getCar(uniqueID).getEngine() == 0)
+        {
             break;
         }
         else
@@ -165,14 +189,22 @@ void spoilerMenu(int uniqueID)
 
         convertLower(spoilerChoice);
 
-        if (spoilerChoice == "y" || spoilerChoice == "yes")
+        if ((spoilerChoice == "y" || spoilerChoice == "yes") && getCar(uniqueID).getSpoiler() == 0)
         {
             getCar(uniqueID).addSpoiler();
             break;
         }
-        else if (spoilerChoice == "n" || spoilerChoice == "no")
+        else if ((spoilerChoice == "y" || spoilerChoice == "yes") && getCar(uniqueID).getSpoiler() == 1)
+        {
+            break;
+        }
+        else if ((spoilerChoice == "n" || spoilerChoice == "no") && getCar(uniqueID).getSpoiler() == 1)
         {
             getCar(uniqueID).removeSpoiler();
+            break;
+        }
+        else if ((spoilerChoice == "n" || spoilerChoice == "no") && getCar(uniqueID).getSpoiler() == 0)
+        {
             break;
         }
         else
@@ -198,14 +230,22 @@ void bonnetMenu(int uniqueID)
 
         convertLower(bonnetChoice);
 
-        if (bonnetChoice == "y" || bonnetChoice == "yes")
+        if ((bonnetChoice == "y" || bonnetChoice == "yes") && getCar(uniqueID).getCarbonFibre() == 0)
         {
             getCar(uniqueID).addCarbonFibre();
             break;
         }
-        else if (bonnetChoice == "n" || bonnetChoice == "no")
+        else if ((bonnetChoice == "y" || bonnetChoice == "yes") && getCar(uniqueID).getCarbonFibre() == 1)
+        {
+            break;
+        }
+        else if ((bonnetChoice == "n" || bonnetChoice == "no") && getCar(uniqueID).getCarbonFibre() == 1)
         {
             getCar(uniqueID).removeCarbonFibre();
+            break;
+        }
+        else if ((bonnetChoice == "n" || bonnetChoice == "no") && getCar(uniqueID).getCarbonFibre() == 0)
+        {
             break;
         }
         else
